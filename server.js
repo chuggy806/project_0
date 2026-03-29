@@ -26,6 +26,14 @@ app.post('/companies', (req, res) => {
   }
 });
 
+app.get('/companies', (req,res) => {
+  res.status(200).send({
+      company: 'Example1'
+  })
+});
+
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
